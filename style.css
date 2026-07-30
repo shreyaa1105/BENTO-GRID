@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+*{
+    margin: 0;
+}
+.whole{
+    background-color: hsl(254, 88%, 90%);
+    font-family: "Red Hat Text", sans-serif;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    gap: -20px;
+}
+.box1{
+    background-color:hsl(31, 66%, 93%);
+    border-radius: 20px;
+    height: 350px;
+    width: 200px;
+    margin: 10px 0px 0px 100px;
+    letter-spacing: -2px;
+}
+.box2{
+    background-color:hsl(39, 100%, 71%);
+    border-radius: 20px;
+    height: 350px;
+    width: 200px;
+    margin: 40px 0px 10px 100px;
+    letter-spacing: -2px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(3);
+    gap: 20px;
+     
+}
+.bluetop{
+    background-color: hsl(256, 67%, 59%);
+    height: 250px;
+    width: 410px;
+    border-radius: 20px;
+    /* display: grid; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.social{
+    background-color: hsl(255, 27%, 71%);
+    border-radius: 20px;
+    grid-row:1/3;
+    grid-column :3/4;
+    height: 485px;
+    width: 195px;
+    position: relative;
+    overflow: hidden;
+}
+.cal{
+    background-color: hsl(39, 100%, 71%);
+    height: 220px;
+    width: 195px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.insta , .august{
+    height: 220px;
+    width: 195px;
+    border-radius: 20px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.content{
+        height: 220px;
+        width: 400px;
+        background-color: hsl(256, 67%, 59%);
+        border-radius: 20px;
+        display: flex;
+        gap: 40px;
+        grid-row: 3/4;
+        grid-column:2/4;
+
+}
+
+@media screen and (max-width:420px){
+
+    .whole{
+        flex-direction: column-reverse;
+        gap:20px;
+        padding:20px 0;
+    }
+
+    .one{
+        width:100%;
+        align-items:center;
+        gap:0px;
+    }
+    .info{
+        margin-left: -50px;
+        
+    }
+
+    .box1,
+    .box2{
+        width:300px;
+        margin:0;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .bluetop{
+        width:300px;
+        grid-column:1;
+    }
+
+    .social{
+        width:300px;
+        height:auto;
+        grid-column:1;
+        grid-row:auto;
+    }
+
+    .insta{
+        width:300px;
+    }
+
+    .cal{
+        width:300px;
+    }
+
+    .august{
+        width:300px;
+    }
+
+    .content{
+        width:300px;
+        grid-column:1;
+        grid-row:auto;
+        flex-direction:column;
+        gap:10px;
+        height:auto;
+        align-items:center;
+        text-align:center;
+        padding:20px 0;
+    }
+
+}
